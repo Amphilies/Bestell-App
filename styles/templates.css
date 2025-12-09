@@ -1,0 +1,46 @@
+/* Header */
+
+header {
+    background-color: orange;
+
+    height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > a {
+    color: white;
+    
+    gap: 10px;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.icon-logo {
+    height: 28px;
+}
+
+.icon-drop-menu {
+    height: 28px;
+}
+
+.icon-drop-menu:hover {
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    background-color: orange;
+
+    height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+}

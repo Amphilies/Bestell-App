@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestell App</title>
+    <link rel="shortcut icon" href="./img/icons/logo_top.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles/standards.css">
+    <link rel="stylesheet" href="./styles/templates.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./script.js"></script>
+    <script src="./getElements.js"></script>
+
+</head>
+
+<body onload="init()">
+    <header class="padding-side">
+        <a href="./index.html"><img class="icon-logo" src="./img/icons/logo_top.png" alt="">Bestell App Logo</a>
+        <div>
+            <img class="icon-drop-menu" src="./img/icons/icon-menu.png" alt="">
+        </div>
+    </header>
+
+
+    <main>
+        <section class="container-dishes">
+            <div class="container-promotion">
+                <div class="container-img-food">
+                    <img class="img-main-food" src="./img/img/food_main.jpg" alt="">
+                    <div class="img-noodlebox"></div>
+                </div>
+                <div class="container-rating padding-side">
+                    <h3>Paradise Noodles</h3>
+                    <p class="rating">Bewertung (4,2 von 5 Sternen)</p>
+                </div>
+            </div>
+
+            <nav class="quick-navigation padding-side">
+                <img class="icon-arrow" src="./img/icons/arrow.png" alt="">
+                <a href="#content_pizza">Pizza</a>
+                <a href="#content_pasta">Pasta</a>
+                <a href="#content_casserole">Aufläufe</a>
+                <a href="#content_asia">Asiatisch</a>
+            </nav>
+
+            <div>
+                <img class="img-dish" src="./img/img/pizza.png" alt="">
+                <h2 class="padding-side">Pizza</h2>
+            </div>
+            <div id="content_pizza">
+
+            </div>
+            <!-- Javascript Render Dish -->
+            <div>
+                <img class="img-dish" src="./img/img/pasta.jpg" alt="">
+                <h2 class="padding-side">Pasta</h2>
+            </div>
+            <div id="content_pasta">
+
+            </div>
+            <!-- Javascript Render Dish -->
+            <div>
+                <img class="img-dish" src="./img/img/auflauf.jpg" alt="">
+                <h2 class="padding-side">Auflauf</h2>
+            </div>
+            <div id="content_casserole">
+
+            </div>
+            <!-- Javascript Render Dish -->
+            <div>
+                <img class="img-dish" src="./img/img/asia.jpg" alt="">
+                <h2 class="padding-side">Asiatisch</h2>
+            </div>
+            <div id="content_asia">
+
+            </div>
+            <!-- Javascript Render Dish -->
+        </section>
+
+        <aside  class="aside-warecart">
+            <button onclick="toggleWareCart()" class="button-cart-small">Warenkorb</button>
+            <div id="toggle_warecart" class="container-warecart container-warecart-small">
+                <div>
+                    <h3 class="title-warecart">Warenkorb</h3>
+                    <div class="container-deliver-options">
+                        <button class="button-delivery">Abholen</button>
+                        <button class="button-cart-active">Liefern</button>
+                    </div>
+                    <div id="content_cart">
+                        <!-- Javascript RenderCart -->
+                    </div>
+
+                    <!--  -->
+
+                    <table class="container-warecart-summary">
+                        <tr class="warecart-summary">
+                            <td>Zwischensumme</td>
+                            <td id="content_order_price"></td>
+                        </tr>
+                        <tr class="warecart-summary">
+                            <td>Liefergebühr</td>
+                            <td id="content_deliver-price">5,00</td>
+                        </tr>
+                        <tr class="warecart-summary">
+                            <td><b>Gesamt</b></td>
+                            <td id="content-end-price"><b>17,50</b></td>
+                        </tr>
+                    </table>
+                </div>
+                <button class="send-order">Bestellen</button>
+            </div>
+        </aside>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

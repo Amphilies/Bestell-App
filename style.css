@@ -1,0 +1,424 @@
+/* Generaly */
+
+main {
+    display: flex;
+
+}
+
+
+
+.sticky {
+    position: sticky;
+    bottom: 0px;
+}
+
+.w-open {
+    background-color: white;
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+
+/* Section Promotion */
+.container-dishes {
+    width: calc(100% - 300px);
+}
+
+.container-promotion {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-img-food {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.img-main-food {
+    height: 150px;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.img-noodlebox {
+    background-image: url(./img/img/nudelbox.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transform: translateY(50px);
+    position: absolute;
+}
+
+.container-rating {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.rating {
+    color: orange;
+}
+
+
+/* dishes navigation */
+.quick-navigation {
+    gap: 40px;
+
+    display: flex;
+    align-items: center;
+}
+
+.quick-navigation>a {
+    background-color: rgb(255, 189, 145);
+    color: black;
+
+    height: 20px;
+    min-width: 100px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.quick-navigation>a:hover {
+    background-color: rgb(255, 146, 73);
+}
+
+.icon-arrow {
+    height: 28px;
+}
+
+/* Dishes */
+.img-dish {
+    height: 100px;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.container-food {
+    border: solid gray 1px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-food:hover {
+    background-color: rgba(255, 166, 0, 0.345);
+}
+
+.dish-information {
+    padding: 10px 0;
+    gap: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.button-add-dish {
+    background-color: rgb(255, 175, 26);
+    color: white;
+    border: none;
+
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+
+    font-size: 36px;
+}
+
+.button-add-dish:hover {
+    cursor: pointer;
+}
+
+/* Warecart */
+.button-cart {
+    background-color: orange;
+    border: none;
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    height: 28px;
+    width: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-cart:hover {
+    background-color: rgb(255, 195, 85);
+    cursor: pointer;
+}
+
+.button-delivery {
+    background-color: orange;
+}
+
+.button-cart-active {
+    background-color: rgb(255, 212, 133);
+}
+
+.button-delivery:hover {
+    background-color: rgb(255, 212, 133);
+    cursor: pointer;
+}
+
+.title-warecart {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.aside-warecart {
+    width: 300px;
+    border: solid gray 2px;
+}
+
+.container-warecart {
+    height: 96vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0px;
+}
+
+.container-deliver-options {
+    padding-top: 20px;
+    gap: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.warecart-dish-information {
+    border: solid black 1px;
+
+    padding: 5px 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.warecart-amount {
+    width: 50%;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.warecart-price {
+    width: 50%;
+    padding: 0 10px;
+    gap: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.icon-trash {
+    height: 20px;
+    width: 20px;
+}
+
+.container-warecart-summary {
+    padding-top: 10px;
+}
+
+.warecart-summary {
+    width: 270px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.send-order {
+    background-color: orange;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.send-order:hover {
+    background-color: rgb(245, 179, 56);
+    cursor: pointer;
+}
+
+/* Warecart small */
+.button-cart-small {
+    display: none;
+}
+
+.aside-warecart-small {
+    width: 100%;
+    border: solid gray 2px;
+}
+
+.warecart-button-small {
+    background-color: blue;
+    color: white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    border: none;
+}
+
+.container-warecart-small {
+
+}
+
+
+.warecart-dish-information-small {
+    border: solid black 1px;
+
+    padding: 5px 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.warecart-amount-small {
+    width: 50%;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.warecart-price-small {
+    width: 50%;
+    padding: 0 10px;
+    gap: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.icon-trash-small {
+    height: 20px;
+    width: 20px;
+}
+
+.container-warecart-summary-small {
+    padding-top: 10px;
+}
+
+.warecart-summary-small {
+    width: 270px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.send-order {
+    background-color: orange;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.send-order:hover {
+    background-color: rgb(245, 179, 56);
+    cursor: pointer;
+}
+
+.d-none {
+    display: none;
+}
+
+@media (max-width: 920px) {
+    .quick-navigation {
+        gap: 20px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .quick-navigation>a {
+        background-color: rgb(255, 189, 145);
+        color: black;
+
+        height: 20px;
+        min-width: 70px;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 720px) {
+
+    /*  */
+    .container-dishes {
+        width: 100%;
+    }
+
+    /* Warecart */
+    main {
+        flex-direction: column;
+    }
+
+    .aside-warecart {
+        background-color: white;
+        width: 100%;
+        position: sticky;
+        bottom: 0px;
+    }
+
+    .button-cart-small {
+        background-color: blue;
+        color: white;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+    }
+
+    .button-cart-small:hover {
+        background-color: rgb(51, 139, 254);
+        cursor: pointer;
+    }
+
+    /* Warecart Small */
+    .aside-warecart-small {
+        display: inherit;
+        width: 100%;
+        border: solid gray 2px;
+    }
+
+    .container-warecart-small {
+        display: none;
+    }
+}
+
+
+@media (max-width: 440px) {
+    .quick-navigation {
+        display: none;
+    }
+
+    .img-noodlebox {
+        display: none;
+    }
+
+}

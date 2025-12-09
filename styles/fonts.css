@@ -1,0 +1,23 @@
+.economica-regular {
+  font-family: "Economica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.economica-bold {
+  font-family: "Economica", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.economica-regular-italic {
+  font-family: "Economica", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.economica-bold-italic {
+  font-family: "Economica", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
