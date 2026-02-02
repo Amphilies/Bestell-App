@@ -1,0 +1,21 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.impressum {
+    height: 100%;
+    padding: 10px 20px;
+}
+
+.datenschutz {
+    height: 100%;
+    padding: 10px 20px;
+}
+
+.contact {
+    height: 100%;
+    padding: 10px 20px;
+}

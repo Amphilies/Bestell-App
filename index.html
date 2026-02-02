@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestell App</title>
+    <link rel="shortcut icon" href="./img/icons/logo_top.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/standards.css">
+    <link rel="stylesheet" href="./styles/templates.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./data.js"></script>
+    <script src="./getElements.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body onload="init()">
+    <header class="p-side">
+        <a class="logo-header" href="./index.html">
+            <img class="img-logo-header" src="./img/icons/logo_top.png" alt="">Bestell App
+        </a>
+        <img onclick="toggleDropMenuBox()" class="img-menu-box" src="./img/icons/icon-menu.png" alt="">
+        <div id="menu_box" class="menu-box menu-box-transform">
+            <div class="menu-box-header">
+                <a onclick="closeDropMenuBox()" class="link-food-navigation-menubox" href="#pizza">Pizza</a>
+                <a onclick="closeDropMenuBox()" class="link-food-navigation-menubox" href="#casserole">Auflauf</a>
+                <a onclick="closeDropMenuBox()" class="link-food-navigation-menubox" href="#pasta">Pasta</a>
+                <a onclick="closeDropMenuBox()" class="link-food-navigation-menubox" href="#asia">Asia</a>
+            </div>
+            <div class="menu-box-footer">
+                <a onclick="closeDropMenuBox()" class="link-food-navigation-menubox" href="./datenschutz.html">Datenschutz</a>
+                <a onclick="closeDropMenuBox()" class="link-food-navigation-menubox" href="./impressum.html">Impressum</a>
+
+            </div>
+        </div>
+    </header>
+
+
+    <div class="main-container">
+        <main>
+            <div>
+                <div class="container-short-information">
+                    <img class="main-food-rastaurant-img" src="./img/img/food_main.jpg" alt="">
+                    <img class="main-foodbox-img" src="./img/img/nudelbox.jpeg" alt="">
+                    <div class="container-rating p-side ">
+                        <h2>Paradise Noodles</h2>
+                        <h4 class="rating">Bewertung (4,2 von 5 Sternen)</h4>
+                    </div>
+                </div>
+
+                <nav class="container-food-navigation">
+                    <img class="nav-arrow-icon p-side" src="./img/icons/arrow.png" alt="">
+                    <div class="food-navigation">
+                        <a class="link-food-navigation" href="#pizza">Pizza</a>
+                        <a class="link-food-navigation" href="#casserole">Auflauf</a>
+                        <a class="link-food-navigation" href="#pasta">Pasta</a>
+                        <a class="link-food-navigation" href="#asia">Asia</a>
+                    </div>
+                </nav>
+
+                <section class="p-side">
+                    <img id="pizza" class="food-img" src="./img/img/pizza.png" alt="">
+                    <h3 class="p-side">Pizza</h3>
+                    <div id="container_dishes_pizza">
+
+                    </div>
+                    <img id="casserole" class="food-img" src="./img/img/auflauf.jpg" alt="">
+                    <h3 class="p-side">Auflauf</h3>
+                    <div id="container_dishes_casserole">
+
+                    </div>
+                    <img id="pasta" class="food-img" src="./img/img/pasta.jpg" alt="">
+                    <h3 class="p-side">Pasta</h3>
+                    <div id="container_dishes_pasta">
+
+                    </div>
+                    <img id="asia" class="food-img" src="./img/img/asia.jpg" alt="">
+                    <h3 class="p-side">Asia</h3>
+                    <div id="container_dishes_asia">
+
+                    </div>
+                </section>
+            </div>
+            <div class="border-right"></div>
+        </main>
+
+        <aside class="aside">
+            <div class="sticky">
+                <div>
+                    <h2 onclick="toggleBasketResponsive()" class="basket-title p-side">Warenkorb</h2>
+                    <div id="content_basket" class="container-deliver-option display">
+                        <button id="btn-deliver" onclick="optionDeliver(5)" class="button-deliver-option">Liefern</button>
+                        <button id="btn_pickup" onclick="optionDeliver(0)" class="button-deliver-option button-active">Abholen</button>
+                    </div>
+                    <div id="container_basket" class="container-basket p-side display">
+
+                    </div>
+
+                    <div id="content_total" class="container-price-view display">
+                        <div class="total">
+                            <div>Zwischensumme</div>
+                            <div>
+                                <span id="subTotal">0,00</span>
+                                <span>€</span>
+                            </div>
+                        </div>
+                        <div class="total">
+                            <div>Lieferkosten</div>
+                            <div>
+                                <span id="delivercost">0,00</span>
+                                <span>€</span>
+                            </div>
+                        </div>
+                        <div class="total">
+                            <div><b>Gesamt</b></div>
+                            <div><b>
+                                <span id="total">0,00</span>
+                                <span>€</span>
+                            </b></div>
+                        </div>
+                    </div>
+                </div>
+                <button id="btn_send_order" class="send-order display" onclick="calculateBasket()">Bestellen</button>
+            </div>
+        </aside>
+    </div>
+
+
+    <footer>
+        <div class="footer-navigator">
+            <a href="./datenschutz.html">Datenschutz</a>
+            <a href="./impressum.html">Impressum</a>
+        </div>
+        <div class="container-social-media">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img class="social-media-icon" src="./img/icons/facebook_logo.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="social-media-icon" src="./img/icons/instagrram_logo.png" alt="">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

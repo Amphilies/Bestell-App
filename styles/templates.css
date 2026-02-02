@@ -1,0 +1,157 @@
+/* Header */
+
+header {
+    background-color: rgb(255, 128, 0);
+    border: solid black 2px;
+    height: 50px;
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-header {
+    color: rgb(128, 51, 0);
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+.img-logo-header {
+    height: 40px;
+}
+
+.img-menu-box {
+    height: 30px;
+    width: 30px;
+}
+
+.img-menu-box:hover {
+    cursor: pointer;
+}
+
+.menu-box {
+    background-color: white;
+    border: solid black 1px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    z-index: 1;
+    transition: ease-in-out 0.5s all;
+}
+.link-food-navigation-menubox {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.link-food-navigation-menubox:hover {
+    background-color: lightgray;
+}
+
+.menu-box-transform {
+    transform: translateY(-400px);
+}
+
+
+.menu-box-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top: solid gray 1px;
+}
+.menu-box-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.menu-box-footer a {
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(79, 79, 79);
+    height: 100px;
+    width: 100vw;
+    padding: 0 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-navigator {
+    gap: 15px;
+    display: flex;
+}
+
+.footer-navigator a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-navigator a:hover {
+    background-color: gray;
+    filter: drop-shadow(0px 0px 7px rgb(135, 135, 135));
+}
+
+.container-social-media {
+    gap: 15px;
+
+    display: flex;
+}
+
+.social-media-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.social-media-icon:hover {
+    filter: drop-shadow(0px 0px 7px rgb(135, 135, 135));
+}
+
+@media (max-width: 600px) {
+    footer {
+        background-color: rgb(79, 79, 79);
+        height: 150px;
+        width: 100vw;
+        padding: 0 50px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-navigator {
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .menu-box {
+        width: 100px;
+        top: 50px;
+        right: 10px;
+    }
+}
